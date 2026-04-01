@@ -7,16 +7,13 @@
       name="description"
       content="A website for a digital banking service that allows users to easily control their finances online. The landing page features a clean and modern design, with sections highlighting the key features of the service, as well as a blog section with the latest articles related to digital banking."
     />
-    <!-- Tailwind CSS -->
     <link rel="stylesheet" href="output.css" />
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Fav Icon -->
     <link
       rel="icon"
       type="image/png"
@@ -25,45 +22,348 @@
     />
     <title>Frontend Mentor | Digitalbank landing page</title>
   </head>
-  <body>
+  <body
+    class="m-0 p-0 text-[18px] font-light font-['Public_Sans'] text-[#9698a6] overflow-x-hidden bg-[#fafafa]"
+  >
+    <header class="bg-white relative z-50 shadow-sm">
+      <nav class="max-w-7xl mx-auto px-6 lg:px-24 py-5">
+        <div class="flex justify-between items-center">
+          <img src="images/logo-dark.svg" alt="logo" class="h-5 lg:h-6" />
 
-    Home About Contact Blog Careers Request Invite Next generation digital
-    banking Take your financial life online. Your Digitalbank account will be a
-    one-stop-shop for spending, saving, budgeting, investing, and much more.
-    Request Invite Why choose Digitalbank? We leverage Open Banking to turn your
-    bank account into your financial hub. Control your finances like never
-    before. Online Banking Our modern web and mobile applications allow you to
-    keep track of your finances wherever you are in the world. Simple Budgeting
-    See exactly where your money goes each month. Receive notifications when
-    you're close to hitting your limits. Fast Onboarding We don't do branches.
-    Open your account in minutes online and start taking control of your
-    finances right away. Open API Manage your savings, investments, pension, and
-    much more from one account. Tracking your money has never been easier.
-    Latest Articles By Claire Robinson Receive money in any currency with no
-    fees The world is getting smaller and we're becoming more mobile. So why
-    should you be forced to only receive money in a single … By Wilson Hutton
-    Treat yourself without worrying about money Our simple budgeting feature
-    allows you to separate out your spending and set realistic limits each
-    month. That means you … By Wilson Hutton Take your Digitalbank card wherever
-    you go We want you to enjoy your travels. This is why we don't charge any
-    fees on purchases while you're abroad. We'll even show you … By Claire
-    Robinson Our invite-only Beta accounts are now live! After a lot of hard
-    work by the whole team, we're excited to launch our closed beta. It's easy
-    to request an invite through the site ... About Us Contact Blog Careers
-    Support Privacy Policy Request Invite © Digitalbank. All Rights Reserved 
+          <ul class="hidden lg:flex gap-8 text-[#9698a6] text-sm font-normal">
+            <li
+              class="transition-all duration-300 ease-in-out hover:text-[#2d314d] hover:border-b-4 hover:border-[#31d35c] hover:-translate-y-1 pb-6 -mb-6 cursor-pointer inline-block"
+            >
+              Home
+            </li>
+            <li
+              class="transition-all duration-300 ease-in-out hover:text-[#2d314d] hover:border-b-4 hover:border-[#31d35c] hover:-translate-y-1 pb-6 -mb-6 cursor-pointer inline-block"
+            >
+              About
+            </li>
+            <li
+              class="transition-all duration-300 ease-in-out hover:text-[#2d314d] hover:border-b-4 hover:border-[#31d35c] hover:-translate-y-1 pb-6 -mb-6 cursor-pointer inline-block"
+            >
+              Contact
+            </li>
+            <li
+              class="transition-all duration-300 ease-in-out hover:text-[#2d314d] hover:border-b-4 hover:border-[#31d35c] hover:-translate-y-1 pb-6 -mb-6 cursor-pointer inline-block"
+            >
+              Blog
+            </li>
+            <li
+              class="transition-all duration-300 ease-in-out hover:text-[#2d314d] hover:border-b-4 hover:border-[#31d35c] hover:-translate-y-1 pb-6 -mb-6 cursor-pointer inline-block"
+            >
+              Careers
+            </li>
+          </ul>
 
-    <footer>
-      <div>
+          <button
+            class="hidden lg:block bg-linear-to-r from-[#31d35c] to-[#2bb7da] text-white px-8 py-3 rounded-full font-bold text-sm hover:opacity-80 transition cursor-pointer"
+          >
+            Request Invite
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="one" class="relative bg-[#fafafa] overflow-visible">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 max-w-7xl mx-auto items-center"
+        >
+          <div
+            class="flex flex-col items-center lg:items-start px-6 lg:px-24 py-20 lg:py-40 z-20"
+          >
+            <h1
+              class="text-4xl lg:text-6xl text-[#2d314d] font-bold text-center lg:text-left leading-tight"
+            >
+              Next generation digital banking
+            </h1>
+            <p
+              class="text-[#9698a6] text-center lg:text-left mt-6 mb-8 lg:text-lg leading-relaxed"
+            >
+              Take your financial life online. Your Digitalbank account will be
+              a one-stop-shop for spending, saving, budgeting, investing, and
+              much more.
+            </p>
+            <button
+              class="w-fit bg-linear-to-r from-[#31d35c] to-[#2bb7da] text-white px-8 py-3 rounded-full font-bold hover:opacity-80 transition cursor-pointer"
+            >
+              Request Invite
+            </button>
+          </div>
+
+          <div class="relative h-100 lg:h-162.5 w-full">
+            <img
+              src="images/bg-intro-desktop.svg"
+              alt="background"
+              class="absolute top-0 right-0 w-[150%] max-w-none translate-y-[-20%] translate-x-[15%] lg:translate-x-[20%] lg:translate-y-[-15%]"
+            />
+
+            <img
+              src="images/image-mockups.png"
+              alt="mockups"
+              class="absolute top-0 right-0 w-full h-auto object-contain z-10 translate-y-[-10%] lg:translate-y-[-5%] lg:translate-x-[15%] max-lg:translate-y-[10%]"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="two" class="bg-[#f3f4f6] py-20 lg:py-28 px-6 lg:px-24">
+        <h2
+          class="text-3xl lg:text-4xl text-[#2d314d] font-bold text-center lg:text-left mb-6 max-w-7xl mx-auto"
+        >
+          Why choose Digitalbank?
+        </h2>
+        <p
+          class="text-[#9698a6] text-center lg:text-left mb-16 max-w-2xl lg:mx-0 mx-auto leading-relaxed"
+        >
+          We leverage Open Banking to turn your bank account into your financial
+          hub. Control your finances like never before.
+        </p>
+        <div
+          id="flex"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 max-w-7xl mx-auto"
+        >
+          <div
+            class="flex flex-col items-center lg:items-start text-center lg:text-left"
+          >
+            <img src="images/icon-online.svg" alt="online" class="mb-8" />
+            <h3 class="text-xl text-[#2d314d] font-bold mb-4">
+              Online Banking
+            </h3>
+            <p class="text-[#9698a6] text-[16px] leading-relaxed">
+              Our modern web and mobile applications allow you to keep track of
+              your finances wherever you are in the world.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center lg:items-start text-center lg:text-left"
+          >
+            <img src="images/icon-budgeting.svg" alt="budgeting" class="mb-8" />
+            <h3 class="text-xl text-[#2d314d] font-bold mb-4">
+              Simple Budgeting
+            </h3>
+            <p class="text-[#9698a6] text-[16px] leading-relaxed">
+              See exactly where your money goes each month. Receive
+              notifications when you're close to hitting your limits.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center lg:items-start text-center lg:text-left"
+          >
+            <img
+              src="images/icon-onboarding.svg"
+              alt="onboarding"
+              class="mb-8"
+            />
+            <h3 class="text-xl text-[#2d314d] font-bold mb-4">
+              Fast Onboarding
+            </h3>
+            <p class="text-[#9698a6] text-[16px] leading-relaxed">
+              We don't do branches. Open your account in minutes online and
+              start taking control of your finances right away.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center lg:items-start text-center lg:text-left"
+          >
+            <img src="images/icon-api.svg" alt="api" class="mb-8" />
+            <h3 class="text-xl text-[#2d314d] font-bold mb-4">Open API</h3>
+            <p class="text-[#9698a6] text-[16px] leading-relaxed">
+              Manage your savings, investments, pension, and much more from one
+              account. Tracking your money has never been easier.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="three" class="bg-[#fafafa] py-20 lg:py-28 px-6 lg:px-24">
+        <h2
+          class="text-3xl lg:text-4xl text-[#2d314d] font-bold text-center lg:text-left mb-10 max-w-7xl mx-auto"
+        >
+          Latest Articles
+        </h2>
+        <div
+          id="flex2"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto"
+        >
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              src="images/image-currency.jpg"
+              alt="currency"
+              class="w-full h-48 object-cover"
+            />
+            <p class="text-[12px] text-[#9698a6] px-6 pt-8 mb-2">
+              By Claire Robinson
+            </p>
+            <h3
+              class="text-lg text-[#2d314d] font-bold px-6 mb-3 hover:text-[#31d35c] cursor-pointer transition-colors leading-tight"
+            >
+              Receive money in any currency with no fees
+            </h3>
+            <p class="text-[14px] text-[#9698a6] px-6 pb-8 leading-relaxed">
+              The world is getting smaller and we're becoming more mobile. So
+              why should you be forced to only receive money in a single …
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              src="images/image-restaurant.jpg"
+              alt="restaurant"
+              class="w-full h-48 object-cover"
+            />
+            <p class="text-[12px] text-[#9698a6] px-6 pt-8 mb-2">
+              By Wilson Hutton
+            </p>
+            <h3
+              class="text-lg text-[#2d314d] font-bold px-6 mb-3 hover:text-[#31d35c] cursor-pointer transition-colors leading-tight"
+            >
+              Treat yourself without worrying about money
+            </h3>
+            <p class="text-[14px] text-[#9698a6] px-6 pb-8 leading-relaxed">
+              Our simple budgeting feature allows you to separate out your
+              spending and set realistic limits each month. That means you …
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              src="images/image-plane.jpg"
+              alt="plane"
+              class="w-full h-48 object-cover"
+            />
+            <p class="text-[12px] text-[#9698a6] px-6 pt-8 mb-2">
+              By Wilson Hutton
+            </p>
+            <h3
+              class="text-lg text-[#2d314d] font-bold px-6 mb-3 hover:text-[#31d35c] cursor-pointer transition-colors leading-tight"
+            >
+              Take your Digitalbank card wherever you go
+            </h3>
+            <p class="text-[14px] text-[#9698a6] px-6 pb-8 leading-relaxed">
+              We want you to enjoy your travels. This is why we don't charge any
+              fees on purchases while you're abroad. We'll even show you …
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              src="images/image-confetti.jpg"
+              alt="confetti"
+              class="w-full h-48 object-cover"
+            />
+            <p class="text-[12px] text-[#9698a6] px-6 pt-8 mb-2">
+              By Claire Robinson
+            </p>
+            <h3
+              class="text-lg text-[#2d314d] font-bold px-6 mb-3 hover:text-[#31d35c] cursor-pointer transition-colors leading-tight"
+            >
+              Our invite-only Beta accounts are now live!
+            </h3>
+            <p class="text-[14px] text-[#9698a6] px-6 pb-8 leading-relaxed">
+              After a lot of hard work by the whole team, we're excited to
+              launch our closed beta. It's easy to request an invite through the
+              site ...
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#2d314d] py-12 px-6 lg:px-24">
+      <div
+        class="flex flex-col lg:grid lg:grid-cols-[1fr_2fr_1fr] lg:grid-rows-2 gap-8 lg:gap-0 max-w-7xl mx-auto text-center lg:text-right text-[#9698a6] text-[15px]"
+      >
+        <div
+          id="social"
+          class="-order-3 lg:order-0 lg:col-start-1 lg:row-start-2 flex justify-center lg:justify-start lg:items-end"
+        >
+          <ul class="flex">
+            <li class="flex gap-4 items-center">
+              <img
+                src="images/icon-facebook.svg"
+                alt="facebook"
+                class="cursor-pointer hover:brightness-200 transition"
+              />
+              <img
+                src="images/icon-youtube.svg"
+                alt="youtube"
+                class="cursor-pointer hover:brightness-200 transition"
+              />
+              <img
+                src="images/icon-twitter.svg"
+                alt="twitter"
+                class="cursor-pointer hover:brightness-200 transition"
+              />
+              <img
+                src="images/icon-pinterest.svg"
+                alt="pinterest"
+                class="cursor-pointer hover:brightness-200 transition"
+              />
+              <img
+                src="images/icon-instagram.svg"
+                alt="instagram"
+                class="cursor-pointer hover:brightness-200 transition"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <img
+          src="images/logo-light.svg"
+          alt="logo"
+          class="-order-4 lg:order-0 lg:col-start-1 lg:row-start-1 mx-auto lg:mx-0"
+        />
+
+        <ul
+          class="-order-2 lg:order-0 lg:col-start-2 lg:row-start-1 lg:row-span-2 flex flex-col lg:grid lg:grid-cols-2 gap-y-3 gap-x-8 text-white/90 text-center lg:text-left"
+        >
+          <li class="hover:text-[#31d35c] cursor-pointer transition">
+            About Us
+          </li>
+          <li class="hover:text-[#31d35c] cursor-pointer transition">
+            Contact
+          </li>
+          <li class="hover:text-[#31d35c] cursor-pointer transition">Blog</li>
+          <li class="hover:text-[#31d35c] cursor-pointer transition">
+            Careers
+          </li>
+          <li class="hover:text-[#31d35c] cursor-pointer transition">
+            Support
+          </li>
+          <li class="hover:text-[#31d35c] cursor-pointer transition">
+            Privacy Policy
+          </li>
+        </ul>
+
+        © Digitalbank. All Rights Reserved
+
+        <button
+          class="-order-1 lg:order-0 lg:col-start-3 lg:row-start-1 justify-self-center lg:justify-self-end bg-linear-to-r from-[#31d35c] to-[#2bb7da] text-white px-8 py-3 rounded-full font-bold text-sm hover:opacity-80 transition cursor-pointer mb-2 lg:mb-0"
+        >
+          Request Invite
+        </button>
+      </div>
+
+      <div class="text-[#9698a6] text-xs text-center mt-12 pt-4">
         Challenge by
         <a
-          class="text-blue-800"
+          class="text-[#31d35c] hover:text-white transition"
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
           rel="noopener"
           >Frontend Mentor</a
         >. Coded By
         <a
-          class="text-blue-800"
+          class="text-[#31d35c] hover:text-white transition"
           href="https://github.com/HatemRishah"
           target="_blank"
           rel="noopener"
@@ -71,6 +371,6 @@
         >🖤
       </div>
     </footer>
-    <script src=""></script>
+    <script src="main.js"></script>
   </body>
 </html>
